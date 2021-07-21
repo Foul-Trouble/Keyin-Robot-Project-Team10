@@ -2,6 +2,7 @@ import robot_mac
 import matplotlib as plt
 r = robot_mac.RobotController()
 r.connect()
+room_5_temp = 0
 
 
 def room_5():
@@ -23,6 +24,7 @@ def room_5():
         r.forward(350)
         r.rotate_counterclockwise(90)
         r.forward(250)
+        global room_5_temp
         room_5_temp = r.take_temperature()
         if r.scan_for_people():
             r.rescue_person()
