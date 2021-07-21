@@ -43,9 +43,10 @@ def room_5():
             r.rotate_clockwise(90)
             r.forward(900)
             r.rotate_clockwise(90)
-            r.forward(2400)
+            r.forward(2415)
             r.rotate_clockwise(90)
             r.forward(1450)
+            r.rotate_clockwise(180)
         else:
             r.rotate_counterclockwise(180)
             r.forward(250)
@@ -62,9 +63,10 @@ def room_5():
             r.rotate_clockwise(90)
             r.forward(900)
             r.rotate_clockwise(90)
-            r.forward(2400)
+            r.forward(2415)
             r.rotate_clockwise(90)
             r.forward(1450)
+            r.rotate_clockwise(180)
     else:
         r.rotate_counterclockwise(180)
         r.forward(575)
@@ -77,10 +79,13 @@ def room_5():
         r.rotate_clockwise(90)
         r.forward(900)
         r.rotate_clockwise(90)
-        r.forward(2400)
+        r.forward(2415)
         r.rotate_clockwise(90)
         r.forward(1450)
+        r.rotate_clockwise(180)
 
+
+room_5()
 
 r.disconnect()
 
