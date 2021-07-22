@@ -110,7 +110,8 @@ def room1():
         r.forward(790)
         r.rotate_clockwise(90)
         r.forward(50)
-        people_scan()
+        if r.scan_for_people:
+            r.rescue_person()
         global room_1_temp
         room_1_temp = r.take_temperature()
         r.backward(50)
